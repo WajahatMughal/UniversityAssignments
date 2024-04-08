@@ -1,0 +1,343 @@
+\documentclass[10pt]{aa}
+
+\usepackage{graphicx}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{txfonts}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{import}
+\usepackage{lipsum}
+
+\begin{document} 
+
+
+   \title{Machine Learning}
+      \subtitle{COMP-1801}
+
+   \author{\textbf{STUDENT NAME}}
+
+   \date{\textbf{Submission Date: 17-December-2021}}
+
+% \abstract{}{}{}{}{} 
+% 5 {} token are mandatory
+ 
+  \abstract
+  {The sector of AI is growing rapidly and becoming an important field of study. As the field expands, lower and smaller AI fields have begun to appear. Despite the fact that we cannot rule the whole field, we can be taught about important learning methods. AI is important because it gives businesses a view of patterns in customer behaviour and business performance models, as it supports the development of innovation. A significant number of current driving organizations, for example, Facebook, AirBnB, Google and Uber, make AI a focal point for their operations. AI has become a major difference for some organizations. Traditional AI usually orders how the figure finds it to be most accurate in its prediction. This report will explore the understanding of key ways to deal with AI, different types of learning statistics. I will explore the advantages and disadvantages of AI methods and calculations and evaluate a selection of clear real-world settings and requirements. Finally, I will use AI statistics to select real word problems and understand cycles related to their organization.}
+   \keywords{Machine Learning, Algorithms of Machine Learning, Learning Algorithms}
+
+   \maketitle
+%-------------------------------------------------------------------
+\section{Introduction}
+The term "AI" was first invented in 1958 by Arthur Samuel, an IBM researcher and innovator in PC games and artificial thinking. AI is considered to be self-limiting under the category of artificial brainpower. It expects to work naturally in the presentation of PC statistics intended for specific assignments using experience. In AI research, experience is gained from preparation information, which can be seen as an example of the information collected from recently recorded ideas or live inputs. Through this experience, AI statistics can learn and build value models to stabilise their expectations and choices. AI (ML) makes its mark, with the development of acknowledging that ML can play an important role in a wide range of basic applications,~\cite{chaurasia_2020_covid19} for example, data mining, general language management, image recognition, and key components. The ML provides potential programs for this large number of posts and then others and is designed to be a pillar of our future personal development.
+
+The list of currently skilled ML publishing supervisors cannot quickly rise to this interest. The main reason for this is that ML is very popular. This machine-based tutorial introduces the nuts and bolts of the ML hypothesis, sets common topics and ideas, makes it easy to follow thought and become familiar with the basics of AI~\cite{liu_2019_prediction}. It understands the Main ML Methods: Supervised Reading, Unread Reading, Unread Reading, Enhanced Reading. With the constant evolution of artificial ideas, the field is too big to imagine and even have some knowledge together.
+
+It is regarded as a sub-discipline of artificial intelligence known as machine learning. Automated optimisation of computer algorithms for specific tasks is the goal of this approach. There are several ways to characterise training data in a machine learning study, such as data obtained from earlier recorded observations or real-time feedback. Machine learning techniques can adapt and improve mathematical models to forecast and make judgments based on their own experiences. Supervised machine learning, unsupervised machine learning, semi-supervised machine learning, and reinforcement machine learning are the four most common ways of Machine Learning. The type of algorithm that data scientists employ is dependent on the sort of data that they wish to forecast.
+%--------------------------------------------------------------------
+\section{Machine Learning Strategies}
+Advanced AI strategies are organised based on the vision of their critical learning program. A large part of AI problems can be addressed by taking one of these approaches. However, we may have complex AI programs that do not fit into any of these approaches. This separation is fundamental as it will help you quickly uncover the problem of the problem you may have later, divide your assets, and promote complete planning ~\cite{parbat_2020_a}.
+\subsection{Approaches} 
+The ancient AI style is constantly plotted on how the figure finds itself to be clearer in its predictions. There are four key processes: guided reading assisted reading, less controlled reading and learning support. The type of information that the researchers decide to use depends on what kind of information they need to predict.
+
+\subsubsection{Supervised Learning}
+In this type of AI, information researchers provide mathematical information for prepared preparation and demonstrate the features they need to calculate in order to evaluate. Both the information and the result of the calculation are shown.
+
+For example; When we try to predict a person's status using his or her weight, age, and sexual orientation, we are seeking information that contains the individual weight, age, and sexual orientation. This information allows AI calculations to find links between lengths and objects ~\cite{yuan_2020_learning}. Then, at that point, by using this information, the model can predict the individual's condition.
+
+\subsubsection{Unsupervised Learning}
+This type of AI includes mathematical training that does not have simple information. Statistics look for collections of information that searches for any relevant links. The knowledge that statistics train, as well as the predictions or predictions it makes, is predetermined.
+
+\subsubsection {Semi-supervised Learning}
+This approach to AI involves a combination of these two main types. Information researchers may be careful to calculate a large portion of the prepared introductory information, but the model is allowed to investigate the information on its own and promote its understanding of the data collection ~\cite{senaviratna_2019_diagnosing}.
+
+\subsubsection{Reinforcement Learning}
+Data researchers often use support to find a way to help a machine complete a multi-step process where there are rules with clear indicators. Information researchers plan calculations to perform a task and give it positive or negative signals as it works the method of completing the task. Be that as it may, the figure is generally based on what the steps lead to.
+
+\subsection{\textbf{Advantages and Disadvantages of Machine Learning}}
+Machine learning has seen application conditions ranging from customer ethical expectations to creating a working framework for self-driving vehicles. In terms of benefits, machine learning can help understand their customers at a much deeper level. By collecting client information and connecting it with processes over time, AI statistics can learn affiliate organisations, assist teams with relevant content development, and drive ambitions in customer interest~\cite{senaviratna_2019_diagnosing}.
+
+A few organisations use machine learning as a key driver in their operations. Uber, for example, uses statistics to link drivers and passengers. Google uses AI to display visual ride alerts. However, machine learning comes with loads. Above all, it tends to cost. AI projects are usually determined by information researchers, who order significant compensation. These tasks require an expensive framework ~\cite{greener_2021_a}.
+
+There is also the issue of machine learning trends. Statistics compiled by data that avoids certain people or that contain errors may cause global error models to be, in the best situation, fail and, even from a negative point of view, biased. At a time when the business integrates intermediate business processes in relation to unilateral models, it may suffer management and reputation damage.
+
+%--------------------------------------------------------------------
+%--------------------------------------------------------------------
+
+\section{Difference between the Supervised and Unsupervised Machine Learning}
+\subsection{Supervise Learning}
+Classification of the best machine learning methods is based on the nature of how feedback is used for learning. One of these techniques can be used to solve the majority of machine learning issues. However, complex machine learning solutions may still fall outside of one of these techniques. This strategy can be used when there are records of response variable values in a data set (or labels). Some refer to this labelled data set as "labelled data" or "training data set."
+For example: using body weight, age, and gender as a predictor of height, we require training data that includes information on the weight, age, and gender of the people we are trying to forecast. Machine learning algorithms can learn how height is related to other factors from this data. The model then uses this information to forecast the height of a specific individual.
+%-------------------------------------- Two column figure (place early!)
+\subsubsection{Supervise Learning Example Code}
+%
+   \begin{itemize}
+\item How to : to output ${\hat{\Mat{Y}}_\mathrm{new}}$ as an estimate of what the new feature values may be ${\Mat{X}_\mathrm{new}}$.
+\item Note: The problem is referred to as a **regression** if the goal values are numerical, and as a **classification** if the target values are class labels.
+\item What we have: the feature and target values${\Mat{X}_\mathrm{train}}, {\Mat{Y}_\mathrm{train}}$ of the training data.
+\item Example 1: Using a regression model to forecast the price of a home (Value = $\Mat{X}$) revenue from a client and the value on the identical row in the table (Value = $\Mat{Y}$) reflects the value of the consumer's home.
+
+   \includegraphics[scale = 0.63]{SL.jpg}
+   \caption{Fig.1 Supervise Learning Code Example}
+   \label{FigVibStab}
+   \end{itemize}
+\endsubsection
+
+\subsection{Scalar Example}
+Problem
+
+Let $a = 5$. 
+
+Define $J$ by $J(\theta) := a \theta^3$.
+- $\frac{d}{d\theta} J(-2)=?$
+
+Solution
+- $\frac{d}{d\theta} J(\theta)=3 a \theta^2$
+- $\frac{d}{d\theta} J(-2)= 3 \cdot 5 \cdot (-2)^2 = 60$
+
+\subsection{Linear Regression}
+A basic definition of Linear Regression is that it is a supervised machine learning model in which the model determines the best fit linear line between the independent and dependent variables. Simple and Multiple Linear Regression are the two main varieties of linear regression. If there are just one independent variable and one dependent variable, the model must identify a linear connection between them. There are several independent variables in Multiple Linear Regression in order to determine the link.
+
+The primary goal of a Linear Regression model is to determine the best fit linear line and the ideal values for the intercept and coefficients such that the error is minimised. If the actual value differs from what was predicted, then an error has occurred.
+
+\subsubsection{Code Example}
+
+\includegraphics[width=0.5\textwidth, inner]{LRM.jpg}
+\caption{Fig.2 Code Example for Linear Regression}
+\label{FigVibStab}
+
+
+\subsection{Why do I use the regression model?}
+Regression analysis helps in anticipation of endless variability. There are actually different situations when we really want future expectations like the weather, banner predictions, advertising patterns, and so on, in which case we want to invent something that can make predictions more accurate. In line with these lines, in such a case, we need Regression research which is a measurable strategy and applied to AI and information science ~\cite{hart_2021_machine}. The following are some of the different purposes after using the retrospective test:
+    \begin{enumerate}
+        \item Backlinks explore the connection between purpose and free objects.
+        \item It is used to track information patterns.
+        \item Helps with realistic/consistent expectations.
+        \item By playing repetition, we can unequivocally determine the main differences, the less important part, and what each element means in different aspects.
+   \end{enumerate}
+The cycle may come in some form from time to time, but if you think you are staying focused, the reason will be sent successfully. For example, in the integration section k means, you will be able to use a large list of recipes and features of Excel (INDEX, IF, AVERAGEIF, ADDRESS, and many more) in all a few worksheets to calculate group focus and refine it. This is anything but a very productive way to form a team. However, you will have the option to track and focus on your crowds as they are sorted into each successive sheet ~\cite{vonlilienfeld_2020_retrospective}. From a pedagogical point of view, the experience is quite different from editing books, where you give the AI library the function of your main objects and produce groups and structures.
+\section{Interpretation of Regression Model}
+Multiple R. This is the coefficient of correlation. It lets you know how strong a direct relationship is. For example, a method that calls 1 good positive relationship and a number of zero methods are not related to any thought addition. The base of the square of r square. A square R is r2, the Coefficient of Determination. It lets you know that the amount of focus falls on the repetition line. For example, 80 percent suggests that 80 percent of the y values near the definition are defined by x values. Therefore, almost 80 percent of the attributes fit the model. The converted R square corresponds to the number of words in the model ~\cite{ai_2021_beneficial}. It will need to use this instead of No.2, assuming you have more than one x. Common Repeated Error Repeated gauge with a standard deviation of μ error. This does not create a common error in graphic ideas. A common recurrence error is the accuracy of the estimated coefficient of repetition; assuming the coefficient is large compared to the standard error, at that time, the coefficient is approximately not equal to 0. Ideas are the number of ideas in the example. Here x is independent, and y is the dependent variable.
+
+The second result get in Excel is rarely used, compared to the multiplication result above. It divides the number of squares into separate parts, so it is usually very diligent in using the information in any meaningful way ~\cite{liakos_2018_machine}. If you happen to be doing a basic repetition (and you want to dive into individual parts), then, at that point, you can close this part of the result. Use caution when specifying repetition models that contain specific words; It is hard to look at the exact word (system effect) and reach a determination. Example: A large polynomial name can make it difficult to differentiate results because index variability is variable, depending on the significance of the index. The great term interaction indicates variability due to the importance of another index ~\cite{hart_2021_machine}.
+
+\begin{itemize}
+\includegraphics[width=8.62cm]{RM.jpg}
+\caption{Fig.3 Regression Analysis Result}
+\label{FigVibStab}
+\end{itemize}
+ 
+%-----------------------------------------------------------------
+
+\section{Analysis}
+AI and in-depth learning have become an integral part of many of the applications we use every day. There are not many spaces for faster AI expansion that have not yet been touched on. Many organizations have developed by promoting an appropriate way to integrate AI statistics into their operations and cycles. Some have lost the foundation of competitors after ignoring the unmistakable development of human thinking. However, dominating AI is a difficult cycle. You really want to start with a solid knowledge of precise polynomial mathematics and statistics, ace programming language like Python, and familiarity with science and AI algorithms, for example, Numpy, Scikit-Learn, TensorFlow, and -PyTorch ~\cite{butler_2018_machine}.
+
+The regression model is a true strategy to show the connection between trusted (targeted) objects and free (indicator) features with at least independent features. More clearly, Regression research helps us to see how the value of reliable variables changes in relation to the automatic fluctuations when some free features are captured. Predicts permanent/real attributes such as temperature, age, compensation, cost, and more. We can understand the concept of Regression the test using the model below:
+
+Example: Suppose that there is an advertising agency A, which always makes a different promotion and gets deals on that. The image below shows the organization's promotion over the last 5 years and related deals:
+
+\includegraphics[width=0.45\textwidth, right]{img.jpg}
+\caption{Fig.2 Regression Analysis Result}
+\label{FigVibStab}
+
+Regression is a supervised learning technique that helps to track down interactions between objects and gives us the ability to anticipate a variety of continuous outcomes depending on at least one indicator. It is widely used for expectations, estimates, time series indicators, and determining the causal impact interactions between objects.
+
+In Regression, we organize the chart between the objects that best match the given data points. Using this structure, the AI model can meet expectations about information. In more direct terms, "Reverse indicates a line or curve passing through all the data points in the track index chart so that the ascending distance between the data points and the recurrence line is smaller." The distance between the data points and the line indicates whether the model holds a strong relationship or not.
+
+%-----------------------------------------------------------------
+
+\section{Conclusions}
+The regression model is one of the most impressively controlled study numbers equipped to perform repetitions as order functions in machine learning. The repetition model is a learning method that combines multiple selected trees and predicts the end result depending on the average yield of each tree. Computer-based intelligence can learn and build respect models to balance their thinking and decisions. Machine Learning does something to keep in mind, with the realization that ML can play an important role in a wide range of important applications, for example, information mines, common language managers, image recognition, and key components ~\cite{gijsbers_2019_gama}. ML provides potential projects for this large number of posts and beyond and is intended to be a pillar of our future self-awareness.
+
+\centering
+\bibliographystyle{plain}
+\bibliography{COMP1801.bib}
+
+\end{document}
+
+Examples for figures using graphicx
+A guide "Using Imported Graphics in LaTeX2e"  (Keith Reckdahl)
+is available on a lot of LaTeX public servers or ctan mirrors.
+The file is : epslatex.pdf 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-------------------------------------------------------------
+%                 A figure as large as the width of the column
+%-------------------------------------------------------------
+   \begin{figure}
+   \centering
+   \includegraphics[width=\hsize]{empty.eps}
+      \caption{Vibrational stability equation of state
+               $S_{\mathrm{vib}}(\lg e, \lg \rho)$.
+               $>0$ means vibrational stability.
+              }
+         \label{FigVibStab}
+   \end{figure}
+%
+%-------------------------------------------------------------
+%                                    One column rotated figure
+%-------------------------------------------------------------
+   \begin{figure}
+   \centering
+   \includegraphics[angle=-90,width=3cm]{empty.eps}
+      \caption{Vibrational stability equation of state
+               $S_{\mathrm{vib}}(\lg e, \lg \rho)$.
+               $>0$ means vibrational stability.
+              }
+         \label{FigVibStab}
+   \end{figure}
+%
+%-------------------------------------------------------------
+%                        Figure with caption on the right side 
+%-------------------------------------------------------------
+   \begin{figure}
+   \sidecaption
+   \includegraphics[width=3cm]{empty.eps}
+      \caption{Vibrational stability equation of state
+               $S_{\mathrm{vib}}(\lg e, \lg \rho)$.
+               $>0$ means vibrational stability.
+              }
+         \label{FigVibStab}
+   \end{figure}
+%
+%-------------------------------------------------------------
+%                                Figure with a new BoundingBox 
+%-------------------------------------------------------------
+   \begin{figure}
+   \centering
+   \includegraphics[bb=10 20 100 300,width=3cm,clip]{empty.eps}
+      \caption{Vibrational stability equation of state
+               $S_{\mathrm{vib}}(\lg e, \lg \rho)$.
+               $>0$ means vibrational stability.
+              }
+         \label{FigVibStab}
+   \end{figure}
+%
+%-------------------------------------------------------------
+%                                      The "resizebox" command 
+%-------------------------------------------------------------
+   \begin{figure}
+   \resizebox{\hsize}{!}
+            {\includegraphics[bb=10 20 100 300,clip]{empty.eps}
+      \caption{Vibrational stability equation of state
+               $S_{\mathrm{vib}}(\lg e, \lg \rho)$.
+               $>0$ means vibrational stability.
+              }
+         \label{FigVibStab}
+   \end{figure}
+%
+%-------------------------------------------------------------
+%                                             Two column Figure 
+%-------------------------------------------------------------
+   \begin{figure*}
+   \resizebox{\hsize}{!}
+            {\includegraphics[bb=10 20 100 300,clip]{empty.eps}
+      \caption{Vibrational stability equation of state
+               $S_{\mathrm{vib}}(\lg e, \lg \rho)$.
+               $>0$ means vibrational stability.
+              }
+         \label{FigVibStab}
+   \end{figure*}
+%
+%-------------------------------------------------------------
+%                                             Simple A&A Table
+%-------------------------------------------------------------
+%
+\begin{table}
+\caption{Nonlinear Model Results}             % title of Table
+\label{table:1}      % is used to refer this table in the text
+\centering                          % used for centering table
+\begin{tabular}{c c c c}        % centered columns (4 columns)
+\hline\hline                 % inserts double horizontal lines
+HJD & $E$ & Method\#2 & Method\#3 \\    % table heading 
+\hline                        % inserts single horizontal line
+   1 & 50 & $-837$ & 970 \\      % inserting body of the table
+   2 & 47 & 877    & 230 \\
+   3 & 31 & 25     & 415 \\
+   4 & 35 & 144    & 2356 \\
+   5 & 45 & 300    & 556 \\ 
+\hline                                   %inserts single line
+\end{tabular}
+\end{table}
+%
+%-------------------------------------------------------------
+%                                             Two column Table 
+%-------------------------------------------------------------
+%
+\begin{table*}
+\caption{Nonlinear Model Results}             
+\label{table:1}      
+\centering          
+\begin{tabular}{c c c c l l l }     % 7 columns 
+\hline\hline       
+                      % To combine 4 columns into a single one 
+HJD & $E$ & Method\#2 & \multicolumn{4}{c}{Method\#3}\\ 
+\hline                    
+   1 & 50 & $-837$ & 970 & 65 & 67 & 78\\  
+   2 & 47 & 877    & 230 & 567& 55 & 78\\
+   3 & 31 & 25     & 415 & 567& 55 & 78\\
+   4 & 35 & 144    & 2356& 567& 55 & 78 \\
+   5 & 45 & 300    & 556 & 567& 55 & 78\\
+\hline                  
+\end{tabular}
+\end{table*}
+%
+%-------------------------------------------------------------
+%                                          Table with notes 
+%-------------------------------------------------------------
+%
+% A single note
+\begin{table}
+\caption{\label{t7}Spectral types and photometry for stars in the
+  region.}
+\centering
+\begin{tabular}{lccc}
+\hline\hline
+Star&Spectral type&RA(J2000)&Dec(J2000)\\
+\hline
+69           &B1\,V     &09 15 54.046 & $-$50 00 26.67\\
+49           &B0.7\,V   &*09 15 54.570& $-$50 00 03.90\\
+LS~1267~(86) &O8\,V     &09 15 52.787&11.07\\
+24.6         &7.58      &1.37 &0.20\\
+\hline
+LS~1262      &B0\,V     &09 15 05.17&11.17\\
+MO 2-119     &B0.5\,V   &09 15 33.7 &11.74\\
+LS~1269      &O8.5\,V   &09 15 56.60&10.85\\
+\hline
+\end{tabular}
+\tablefoot{The top panel shows likely members of Pismis~11. The second
+panel contains likely members of Alicante~5. The bottom panel
+displays stars outside the clusters.}
+\end{table}
+%
+% More notes
+%
+\begin{table}
+\caption{\label{t7}Spectral types and photometry for stars in the
+  region.}
+\centering
+\begin{tabular}{lccc}
+\hline\hline
+Star&Spectral type&RA(J2000)&Dec(J2000)\\
+\hline
+69           &B1\,V     &09 15 54.046 & $-$50 00 26.67\\
+49           &B0.7\,V   &*09 15 54.570& $-$50 00 03.90\\
+LS~1267~(86) &O8\,V     &09 15 52.787&11.07\tablefootmark{a}\\
+24.6         &7.58\tablefootmark{1}&1.37\tablefootmark{a}   &0.20\tablefootmark{a}\\
+\hline
+LS~1262      &B0\,V     &09 15 05.17&11.17\tablefootmark{b}\\
+MO 2-119     &B0.5\,V   &09 15 33.7 &11.74\tablefootmark{c}\\
+LS~1269      &O8.5\,V   &09 15 56.60&10.85\tablefootmark{d}\\
+\hline
+\end{tabular}
+\tablefoot{The top panel shows likely members of Pismis~11. The second
+panel contains likely members of Alicante~5. The bottom panel
+displays stars outside the clusters.\\
+\tablefoottext{a}{Photometry for MF13, LS~1267 and HD~80077 from
+Dupont et al.}
+\tablefoottext{b}{Photometry for LS~1262, LS~1269 from
+Durand et al.}
+\tablefoottext{c}{Photometry for MO2-119 from
+Mathieu et al.}
+}
+\end{table}
+
+
